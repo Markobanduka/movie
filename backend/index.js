@@ -19,10 +19,6 @@ app.use(cookieParser());
 dotenv.config();
 const PORT = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
 // Routes
 app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/genre", genreRoutes);
